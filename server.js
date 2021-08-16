@@ -6,7 +6,11 @@ const PORT = 8080;
 // App
 const app = express();
 app.get("/", (req, res) => {
-  res.send("Hello World 123");
+  res.send("Hello Nodejs Kubernetes");
+});
+
+app.get("/audrey", (req, res) => {
+  res.send("Audrey app");
 });
 
 app.listen(PORT);
