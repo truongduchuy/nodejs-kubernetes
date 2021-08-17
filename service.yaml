@@ -8,5 +8,5 @@ spec:
     app: app1-deployment
   ports:
   - protocol: TCP
-    port: 8080
-    nodePort: 30010
+    port: 60000
+    targetPort: 50000

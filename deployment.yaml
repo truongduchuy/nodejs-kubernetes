@@ -15,5 +15,6 @@ spec:
       containers:
       - name: app1-deployment
         image: gcr.io/PROJECT_ID/IMAGE:TAG
-        ports:
-        - containerPort: 8080
+        env:
+        - name: "PORT"
+          value: "50000"
